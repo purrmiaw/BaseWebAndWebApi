@@ -24,7 +24,7 @@ namespace SampleWebApi.Controllers
             return View();
         }
 
-        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        // Protected by Cookie if we only use [Authorize]
         [Authorize]
         public IActionResult Contact()
         {
